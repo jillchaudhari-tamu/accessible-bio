@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jill Chaudhari | Accessible Computing Bio</title>
+  <meta name="description" content="Bio page for accessible computing: interests, skills, and collaboration topics." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <h1>Jill Chaudhari</h1>
+        <p class="tagline">
+          CSCE student interested in <strong>accessible</strong>, human-centered software.
+        </p>
+      </div>
+
+      <!-- Non-decorative image (meaningful): your face -->
+      <figure class="profile">
+        <img
+          src="jill.jpg"
+          alt="Headshot of Jill Chaudhari smiling, wearing a dark top, facing the camera."
+          width="260"
+          height="260"
+        />
+        <figcaption>Hi! If you see me in class, this is what I look like.</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section aria-labelledby="about">
+      <h2 id="about">About me</h2>
+      <p>
+        I’m a Computer Science &amp; Engineering student at Texas A&amp;M. I like building projects where
+        usability and accessibility are treated as <em>core requirements</em>, not “nice-to-have” features.
+      </p>
+
+      <h3>What I’m looking for in teammates</h3>
+      <p>
+        I’m down to team up with people who care about accessibility testing, inclusive UI design,
+        and practical features like captions, keyboard navigation, and readable layouts.
+      </p>
+    </section>
+
+    <section aria-labelledby="accessibility-interests">
+      <h2 id="accessibility-interests">Accessibility interests</h2>
+
+      <p>
+        Topics I’m especially interested in:
+      </p>
+
+      <ul>
+        <li><strong>WCAG-friendly UI</strong> (contrast, headings, focus states, semantics)</li>
+        <li><strong>Assistive tech compatibility</strong> (screen readers, keyboard-only navigation)</li>
+        <li><strong>Accessible media</strong> (captions, transcripts, clear audio)</li>
+        <li><strong>Inclusive forms</strong> (labels, errors, helpful instructions)</li>
+      </ul>
+
+      <h3>Ways I can contribute</h3>
+      <ol>
+        <li>Build semantic page structure with accessible components</li>
+        <li>Run quick accessibility checks (keyboard pass + basic screen reader pass)</li>
+        <li>Write clear alt text and ensure headings/landmarks make sense</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="connect">
+      <h2 id="connect">Connect with me</h2>
+      <p>
+        If we share interests, send me a note. This form opens your email app (no scripting required).
+      </p>
+
+      <!-- Form that initiates an action (mailto) -->
+      <form
+        class="card"
+        action="mailto:jill.chaudhari@tamu.edu"
+        method="post"
+        enctype="text/plain"
+      >
+        <fieldset>
+          <legend>Message Jill</legend>
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="topic">What accessibility topic are you into?</label>
+            <select id="topic" name="topic">
+              <option value="wcag">WCAG / UI design</option>
+              <option value="screenreaders">Screen readers / semantics</option>
+              <option value="captions">Captions / transcripts</option>
+              <option value="testing">Accessibility testing</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">Open email draft</button>
+        </fieldset>
+      </form>
+
+      <p class="links-row">
+        <a href="bio-links.html">Go to the Web Page Bio Links page</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year">2026</span> Jill Chaudhari</p>
+
+      <!-- Decorative image (no meaningful content): empty alt -->
+      <img class="decor" src="divider.png" alt="" width="180" height="24" />
+    </div>
+  </footer>
+</body>
+</html>
